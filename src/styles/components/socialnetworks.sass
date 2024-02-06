@@ -1,0 +1,63 @@
+@use '../variables'
+@use '../mixins' 
+
+
+#social-networks
+    
+    @include mixins.center
+    gap: 1.5rem
+    margin: 6rem 0
+
+    .pin
+        position: relative
+        left: 8rem
+        color: variables.$text-color-secondary
+        transition: 200ms ease-out
+        opacity: 0
+
+    .social-btn
+        position: relative
+        left: 4rem
+        padding: .6em
+        background-color: variables.$bg-color-secondary
+        border-radius: variables.$card-border-radius
+        color: #333
+        font-size: 2rem
+        transition: 200ms ease-out
+        @include mixins.center
+        
+    #linkedin
+        color: #0072b1
+        
+
+    #github
+        color: #111
+
+    #gmail
+        color: #bc2a2a
+
+    #pin
+        color: #277e41
+        
+    :hover
+        background: variables.$gradient
+    
+        > svg
+            color: variables.$text-color
+            transition: transform .4s
+            transform: scale(1.8)
+            
+    &:hover
+
+        > .pin
+            opacity: 100
+            background: variables.$bg-color
+            position: relative
+            left: 0rem
+            transition: 500ms ease-in-out
+
+    &:hover
+        > .social-btn
+            position: relative
+            left: 0rem
+            transition: 500ms ease-in-out

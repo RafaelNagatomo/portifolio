@@ -1,0 +1,41 @@
+@use '../variables'
+@use '../mixins'
+
+.projects-container
+    @include mixins.center
+    flex-wrap: wrap
+    width: 80%
+    margin-top: 6rem
+    max-height: 100vh
+
+    h2
+        font-size: 4rem
+        margin-bottom: 1rem
+        background: variables.$gradient
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+    .projects-grid
+        @include mixins.center
+        flex-wrap: wrap
+        gap: 1.5rem
+        margin: 5rem 0
+
+    .projects-cards
+        @include mixins.center
+        flex-wrap: wrap
+        position: relative
+        text-align: center
+        padding: 1rem
+        border: 1px solid #333
+        width: 25rem
+        height: 15rem
+        border-radius: variables.$card-border-radius 
+
+    .footer
+        width: 30rem
+        margin-top: 5rem
+        text-align: center
+        color: variables.$text-color-secondary
+        font-size: 0.8rem
+        

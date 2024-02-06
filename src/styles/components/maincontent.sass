@@ -1,0 +1,26 @@
+@use '../variables'
+@use '../mixins'
+    
+#main-content
+    min-height: 100vh
+    max-height: 100vh
+    background-color: variables.$bg-color
+    flex: 1 1
+    border-radius: variables.$container-border-radius
+    padding: 4rem
+
+    section
+        display: flex
+        flex-direction: column
+        margin-top: 2rem
+        max-width: 40rem
+            
+    p
+        color: variables.$text-color-secondary
+        margin-bottom: 1rem
+        line-height: 2rem
+        font-size: 1.4rem
+
+    .btn
+        align-self: start
+        @include mixins.btn
