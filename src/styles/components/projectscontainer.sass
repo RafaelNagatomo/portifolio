@@ -2,7 +2,6 @@
 @use '../mixins'
 
 .projects-container
-    
     @include mixins.center
     flex-wrap: wrap
     width: 80%
@@ -27,8 +26,6 @@
     .projects-cards 
         @include mixins.center
         flex-wrap: wrap
-        position: relative
-        z-index: 1
         text-align: center
         border: 1px solid #333
         width: 25rem
@@ -43,12 +40,10 @@
             transition: 200ms ease-out
         
         .project-baner
-            position: relative
-            z-index: 2
+            position: absolute
             width: 25.5rem
             color: variables.$text-color-secondary
             background-color: variables.$bg-color-secondary
-            
             top: -4rem
             padding: .3em
             transition: 200ms ease-out
