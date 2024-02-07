@@ -1,5 +1,5 @@
 import Sidebar from "./components/Sidebar";
-import MainContent from "./components/mainContent";
+import MainContent from "./components/MainContent";
 import ProjectsContainer from "./components/ProjectsContainer";
 
 import "./styles/components/app.sass";
