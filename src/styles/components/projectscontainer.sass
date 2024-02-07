@@ -2,11 +2,13 @@
 @use '../mixins'
 
 .projects-container
+    
     @include mixins.center
     flex-wrap: wrap
     width: 80%
     margin-top: 6rem
     max-height: 100vh
+
 
     h2
         font-size: 4rem
@@ -20,17 +22,67 @@
         flex-wrap: wrap
         gap: 1.5rem
         margin: 5rem 0
+        
 
-    .projects-cards
+    .projects-cards 
         @include mixins.center
         flex-wrap: wrap
         position: relative
+        z-index: 1
         text-align: center
-        padding: 1rem
         border: 1px solid #333
         width: 25rem
         height: 15rem
         border-radius: variables.$card-border-radius 
+        
+
+        img
+            width: 25rem
+            height: 15rem
+            border-radius: variables.$card-border-radius
+            transition: 200ms ease-out
+        
+        .project-baner
+            position: relative
+            z-index: 2
+            width: 25.5rem
+            color: variables.$text-color-secondary
+            background-color: variables.$bg-color-secondary
+            
+            top: -4rem
+            padding: .3em
+            transition: 200ms ease-out
+            opacity: 0
+            border-radius: variables.$card-border-radius
+
+            .project-tech, .project-name, .project-description
+                margin: 1rem
+
+            .project-tech
+                @include mixins.center
+                gap: 1rem
+
+                .tech
+                    background-color: variables.$bg-color
+                    border-radius: variables.$card-border-radius
+                    padding: .5rem
+
+            .project-name
+                font-size: 1.2rem
+                font-weight: bold
+                
+        :hover
+            transition: transform .5s
+            transform: scale(1.02)
+            cursor: pointer
+
+            > .project-baner
+                z-index: 100
+                opacity: 100
+                background: variables.$bg-color-secondary
+                position: relative
+                top: -1rem
+                transition: 500ms ease-in-out
 
     .footer
         width: 30rem

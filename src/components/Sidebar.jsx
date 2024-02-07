@@ -1,5 +1,7 @@
 import SocialNetworks from "./SocialNetworks";
 
+import cv from "../img/Currículo Rafael Nagatomo.pdf";
+
 import "../styles/components/sidebar.sass";
 
 const Sidebar = () => {
@@ -8,7 +10,7 @@ const Sidebar = () => {
       <h1>Rafael Nagatomo</h1>
       <p>Desenvolvedor Front-end</p>
       <SocialNetworks />
-      <a href="" className="btn">
+      <a href={cv} download="Currículo Rafael Nagatomo" className="btn">
         Download currículo
       </a>
     </aside>
