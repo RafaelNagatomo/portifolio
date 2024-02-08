@@ -20,20 +20,27 @@
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
 
+    .project
+        transition: 300ms ease-out
+
+        a
+            position: relative
+            color: red
+
     .projects-grid
         @include mixins.center
         flex-wrap: wrap
         gap: 1.5rem
         margin: 5rem 0
+        
 
     .projects-cards 
-        // width: 80vw
-        // height: 50rem
         @include mixins.center
         flex-wrap: wrap
         text-align: center
         border: 1px solid #333
         border-radius: variables.$card-border-radius 
+        
 
         @media (variables.$lg)
             width: 80vw
@@ -77,11 +84,35 @@
             position: absolute
             color: variables.$text-color-secondary
             background-color: variables.$bg-color-secondary
-            top: 10rem
+            top: 5rem
             padding: .4em
-            transition: 200ms ease-out
+            transition: 300ms ease-out
             opacity: 0
             border-radius: variables.$card-border-radius
+
+        .project:hover
+            transition: transform .5s
+            transform: scale(1.02)
+            cursor: pointer
+
+            > .project-baner
+                opacity: 100
+                background: variables.$bg-color-secondary
+                position: absolute
+                top: 13rem
+                transition: 500ms ease-in-out
+
+                @media (variables.$lg)
+                    top: 25rem
+
+                @media (variables.$md)
+                    top: 20rem
+
+                @media (variables.$sm)
+                    top: 4rem
+
+                @media (variables.$mn)
+                    botton: 2rem
 
             .project-tech, .project-name, .project-description
                 margin: 1rem
@@ -99,26 +130,6 @@
                 font-size: 1.2rem
                 font-weight: bold
                 
-        .project:hover
-            transition: transform .5s
-            transform: scale(1.02)
-            cursor: pointer
-
-            > .project-baner
-                opacity: 100
-                background: variables.$bg-color-secondary
-                position: absolute
-                top: 19rem
-                transition: 500ms ease-in-out
-
-                @media (variables.$lg)
-                    top: 39rem
-
-                @media (variables.$md)
-                    top: 29rem
-
-                @media (variables.$sm)
-                    top: 19rem
 
     .footer
         width: 30rem
