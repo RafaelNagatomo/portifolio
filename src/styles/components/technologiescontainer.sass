@@ -5,8 +5,15 @@
 
     .technologies-grid
         display: flex
+        justify-content: center
         flex-flow: row wrap
         gap: 1.5rem
+
+        @media (variables.$lg)
+            gap: .5rem
+
+        @media (variables.$sm)
+            justify-content: left
 
     .technology-card
         position: relative
@@ -16,12 +23,45 @@
         width: 12rem
         border-radius: variables.$card-border-radius 
 
+        @media (variables.$lg)
+            padding: 0
+            width: 6.5rem
+
+        @media (variables.$sm)
+            width: 5rem
+
+        @media (variables.$vsm)
+            width: 12rem
+            padding: 1rem
+
+        @media (variables.$mn)
+            padding: 0
+            width: 5rem
+
         h3
             margin-top: 1rem
             color: variables.$text-color-secondary
-           
+
+            @media (variables.$sm)
+                font-size: 1rem
+
+            @media (variables.$vsm)
+                font-size: 1.6rem
+
+            @media (variables.$vsm)
+                font-size: 0.8rem
+
         svg
             font-size: 6rem
+
+            @media (variables.$sm)
+                font-size: 3rem
+
+            @media (variables.$vsm)
+                font-size: 6rem
+
+            @media (variables.$mn)
+                font-size: 3rem
             
     #html
 

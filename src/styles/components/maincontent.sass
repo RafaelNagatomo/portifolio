@@ -2,12 +2,27 @@
 @use '../mixins'
     
 #main-content
-    min-height: 100vh
+    display: flex
+    flex-direction: column
+    flex: 1 1
+    align-items: center
+    min-height: 75vh
     max-height: 100vh
     background-color: variables.$bg-color
-    flex: 1 1
     border-radius: variables.$container-border-radius
-    padding: 4rem
+    padding-top: 4rem
+
+    @media (variables.$md)
+        min-height: 10vh
+
+    @media (variables.$sm)
+        min-height: 10vh
+
+    @media (variables.$vsm)
+        margin: 2rem
+
+    @media (variables.$mn)
+        // margin: 3rem
 
     section
         display: flex

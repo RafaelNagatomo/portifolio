@@ -25,6 +25,7 @@ const ProjectsContainer = () => {
             </div>
           </div>
         </div>
+
         <div className="projects-cards">
           <div className="project">
             <div className="cover"></div>

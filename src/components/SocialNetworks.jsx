@@ -43,10 +43,11 @@ const SocialNetworks = () => {
           {network.icon}
         </a>
       ))}
-      <p className="pin">
+      {/* <p className="pin">
         Mirassol-SP,
         <br /> Brasil
       </p>
+      ; */}
     </section>
   );
 };
