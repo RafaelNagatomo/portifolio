@@ -3,6 +3,7 @@ import "../styles/components/projectscontainer.sass";
 import cover0 from "../img/embreve.png";
 import cover1 from "../img/print-app.png";
 import cover2 from "../img/todolist.png";
+import cover3 from "../img/lpcursosmergulho2.png";
 
 const ProjectsContainer = () => {
   return (
@@ -20,9 +21,8 @@ const ProjectsContainer = () => {
               <img src={cover1} alt="financial-cover" />
               <div className="project-baner">
                 <div className="project-tech">
-                  <div className="tech">Html</div>
-                  <div className="tech">CSS</div>
-                  <div className="tech">JavaSript</div>
+                  <div className="tech">WordPress</div>
+                  <div className="tech">Elementor</div>
                 </div>
                 <div className="project-name">Lançamento Financeiro</div>
                 <div className="project-description">
@@ -69,19 +69,18 @@ const ProjectsContainer = () => {
         <div className="projects-cards">
           <div className="project">
             <div className="cover"></div>
-            <img src={cover0} alt="em-breve" />
-            {/* <div className="project-baner">
+            <img src={cover3} alt="lpcursosmergulho" />
+            <div className="project-baner">
               <div className="project-tech">
-                <div className="tech">Html</div>
-                <div className="tech">CSS</div>
-                <div className="tech">JavaSript</div>
+                <div className="tech">WordPress</div>
+                <div className="tech">Elementor</div>
               </div>
-              <div className="project-name">Lançamento Financeiro</div>
+              <div className="project-name">Landing Page</div>
               <div className="project-description">
-                Criado com Javascript puro simulando um app de lançamentos de
-                receitas e despesas, com modal na função 'Edit' e 'Delete'.
+                Landing Page de venda de cursos criado com WordPress e
+                Elementor.
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
 
