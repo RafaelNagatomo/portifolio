@@ -21,8 +21,9 @@ const ProjectsContainer = () => {
               <img src={cover1} alt="financial-cover" />
               <div className="project-baner">
                 <div className="project-tech">
-                  <div className="tech">WordPress</div>
-                  <div className="tech">Elementor</div>
+                  <div className="tech">JavaScript</div>
+                  <div className="tech">Html</div>
+                  <div className="tech">CSS</div>
                 </div>
                 <div className="project-name">Lançamento Financeiro</div>
                 <div className="project-description">
