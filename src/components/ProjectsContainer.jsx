@@ -67,21 +67,27 @@ const ProjectsContainer = () => {
         </div>
 
         <div className="projects-cards">
-          <div className="project">
-            <div className="cover"></div>
-            <img src={cover3} alt="lpcursosmergulho" />
-            <div className="project-baner">
-              <div className="project-tech">
-                <div className="tech">WordPress</div>
-                <div className="tech">Elementor</div>
-              </div>
-              <div className="project-name">Landing Page</div>
-              <div className="project-description">
-                Landing Page de venda de cursos criado com WordPress e
-                Elementor.
+          <a
+            href="https://lpcursosmergulho.netlify.app/"
+            target="_blank"
+            rel="lp cursos"
+          >
+            <div className="project">
+              <div className="cover"></div>
+              <img src={cover3} alt="lpcursosmergulho" />
+              <div className="project-baner">
+                <div className="project-tech">
+                  <div className="tech">WordPress</div>
+                  <div className="tech">Elementor</div>
+                </div>
+                <div className="project-name">Landing Page</div>
+                <div className="project-description">
+                  Landing Page de venda de cursos criado com WordPress e
+                  Elementor.
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
 
         <div className="projects-cards">
